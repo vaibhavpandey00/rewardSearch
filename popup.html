@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Popup Rewards Search Automator</title>
+	<link rel="stylesheet" href="css/popup.css" />
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<script src="/libs/permissions.js"></script>
+</head>
+
+<body>
+	<header>
+		<a id="search">Search</a>
+		<a id="schedule">Schedule</a>
+	</header>
+	<div id="searchDiv">
+		<div id="searchInput">
+			<div class="input">
+				<label for="searchDesktop">Desktop</label>
+				<input type="number" name="searchDesktop" id="searchDesktop" min="0" max="150" />
+			</div>
+			<div class="input">
+				<label for="searchMobile">Mobile</label>
+				<input type="number" name="searchMobile" id="searchMobile" min="0" max="150" />
+			</div>
+			<button id="searchPerform">Search</button>
+		</div>
+		<div id="searchDelay">
+			<div class="input">
+				<label for="searchMin">Min. Delay</label>
+				<input type="number" name="searchMin" id="searchMin" min="20" max="999" />
+			</div>
+			<div class="input">
+				<label for="searchMax">Max. Delay</label>
+				<input type="number" name="searchMax" id="searchMax" min="25" max="999" />
+			</div>
+		</div>
+		<div id="searchDefault">
+			<a id="searchT1">0 Mob + 15 PC</a>
+			<a id="searchT2">16 Mob + 00 PC</a>
+			<!-- <a id="searchT3">60 Mob + 90 PC</a>
+			<a id="searchT4">90 Mob + 150 PC</a> -->
+		</div>
+	</div>
+
+	<div id="scheduleDiv">
+		<div id="scheduleInput">
+			<div class="input">
+				<label for="scheduleDesktop">Desktop</label>
+				<input type="number" name="scheduleDesktop" id="scheduleDesktop" min="0" max="150" />
+			</div>
+			<div class="input">
+				<label for="scheduleMobile">Mobile</label>
+				<input type="number" name="scheduleMobile" id="scheduleMobile" min="0" max="150" />
+			</div>
+			<button id="schedulePerform">Schedule</button>
+		</div>
+		<div id="scheduleDelay">
+			<div class="input">
+				<label for="scheduleMin">Min. Delay</label>
+				<input type="number" name="scheduleMin" id="scheduleMin" min="15" max="999" />
+			</div>
+			<div class="input">
+				<label for="scheduleMax">Max. Delay</label>
+				<input type="number" name="scheduleMax" id="scheduleMax" min="20" max="999" />
+			</div>
+		</div>
+		<div id="scheduleDefault">
+			<a id="scheduleT1">Never</a>
+			<a id="scheduleT2">After startup</a>
+			<a id="scheduleT3">Every 5-6 Minutes</a>
+			<a id="scheduleT4">Every 15-17.5 Minutes</a>
+		</div>
+	</div>
+
+	<div id="searchNiche">
+		<a id="searchTech" class="searchNiche">Tech</a>
+		<a id="searchAnime" class="searchNiche">Anime</a>
+		<a id="searchTravel" class="searchNiche">Travel</a>
+		<a id="searchMovies" class="searchNiche">Movies</a>
+		<a id="searchRandom" class="searchNiche">Random</a>
+	</div>
+	<div id="patch">
+		<!-- <p>Force Mobile Points (Patch v1.4.3):</p>
+		<a id="yesPatch">Yes</a>
+		<a id="noPatch">No</a> -->
+	</div>
+	<footer>
+		<a id="shuffle" title="Reset Mobile device"></a>
+	</footer>
+	<div id="stopDiv">
+		<a id="stop">Stop Searches</a>
+	</div>
+	<script src="js/jq.js"></script>
+	<script src="js/popup.js"></script>
+</body>
+
+</html>
